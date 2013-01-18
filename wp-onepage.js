@@ -124,40 +124,6 @@
 
 
 
-	/**
-	 * Utilities
-	*/
-
-	// DEPRECATED
-	// Public: Extend an url string with additional parameters
-	//
-	// url - The url string to extend, must be a valid url
-	// params - An object of url parameters
-	//
-	// Examples:
-	//
-	//		addParam(
-	//			'http://api.jquery.com/#post-461',
-	//			'myParam'
-	//		);
-	//		// => http://api.jquery.com/?myParam#post-461
-	//
-	//		addParam(
-	//			'http://api.jquery.com/?post=461',
-	//			'myOtherParam=foo'
-	//		);
-	//		// => http://api.jquery.com/?post=461&myOtherParam=foo
-	//
-	// Returns the new url string
-	// var addParam = onePage.addParam = function(url, param) {
-	//		var questionmark = /^[^#]+?\?/.test(url);
-	//		var parts = url.match(/([^#]+)?(.*)/);
-	//		var result = parts[1] + (questionmark ? '&' : '?') + param + parts[2];
-	//		return result;
-	// };
-
-
-
 	// Public access to onePage via jQuery.onePage
 	$.fn.onePage = onePage;
 
